@@ -7,7 +7,7 @@ export const Filter = () => {
   const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     setSelectedOption(event.target.value);
   };
-  const { filterByDate, setAnimeTitle, FilterParams } = useDataContext();
+  const { filterByDate, setAnimeTitle, FilterParams, updatePage } = useDataContext();
   const [title, setTitle] = useState("");
 
   function dateHandler(e: React.ChangeEvent<HTMLInputElement>) {
@@ -20,6 +20,7 @@ export const Filter = () => {
     if (e.code === "Enter") {
       setAnimeTitle(title);
       setTitle("");
+      updatePage("1");
     }
   }
   function setFilter(e: React.ChangeEvent<HTMLSelectElement>) {
