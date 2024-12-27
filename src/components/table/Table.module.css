@@ -1,0 +1,15 @@
+.table_head_id{
+    border:1px solid black;
+     width:100px;
+}
+.table_head_title{
+    border:1px solid black;
+     width:400px;
+}
+.table_head_date{
+    border:1px solid black;
+     width:250px;
+}
+.table_content{
+    border: 1px solid black;
+}

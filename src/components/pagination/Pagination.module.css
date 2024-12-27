@@ -1,0 +1,28 @@
+.pag{
+    display: flex;
+    align-items: center;
+  justify-content: center;
+
+}
+
+.pag_btns {
+  width: 500px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pag_button {
+  cursor: pointer;
+  width: 120px;
+  height: 25px;
+  border: 1px solid lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pag_button:hover {
+  background-color: #9e9c9c;
+  color: bisque;
+}
